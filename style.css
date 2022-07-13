@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #7CFFC4;
+}
+
+.main-content {
+    margin-left: auto;
+    padding: 20px 0px 0px 70px;
+
+}
+
+.title-location {
+    font-size: 40px;
+}
+
+.paragraph-extra {
+    position: relative;
+    left: 35px;
+    font-size: 18px;
+}
