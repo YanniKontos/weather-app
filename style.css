@@ -6,32 +6,87 @@
 }
 
 body {
-    width: 100%;
     height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
+/* setting the page width and viewpiont height */
+
 .main-content {
-    padding: 20px 0px 0px 70px;
-    text-shadow: 0.1rem 0.1rem 2.3rem black;
     color: white;
 }
 
-.title-location {
+/* contains and therefore affects all items on the main webpage */
+
+.left-info {
+    padding: 20px 0px 0px 60px;
+    text-shadow: 0.1rem 0.1rem 3rem black;
+}
+
+
+.location-left {
     font-size: 40px;
 }
 
-.paragraph-extra {
+.location-extra {
     position: relative;
     left: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
+
+.left-panel {
+    margin-top: 30px;
+    padding: 15px 0px 0px 0px;
+    width: 28rem;  
+    height: 30rem;
+    background: black;
+    border-radius: 10px;
+
+    
+}
+
+.left-panel  h1 {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.middle-panels {
+    display: flex;
+}
+
+/* right side of the webpage */
+
+.right-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 60px 0px 0px;  
+    text-shadow: 0.1rem 0.1rem 3.5rem black;
+}
+
+.date-right {
+    font-size: 30px;
+}
+
+.time-right {
+    font-size: 25px;
+    text-align: center;
+}
+
+.time-of-day {
+    font-size: 16px;
+}
+
+/* using flex and justify content to separate elements across the document 
++ small adjustments for quality of life (such as font size) for nice details*/
+
 
 .background-video {
     position: absolute;
-    width: 100%;
     min-height: 100vh;
+    width: 100%;
     right: 0;
     bottom: 0;
-    z-index: -99;
-
+    z-index: -1;
 }
