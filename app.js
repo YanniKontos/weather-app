@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", event => {
 });
 
 
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=4c553b35fe5bd4983d58eba9c3fe5c6c`
+const apiUrl = `#`
 
 fetch(apiUrl)
 
