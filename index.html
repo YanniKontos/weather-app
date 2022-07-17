@@ -7,19 +7,26 @@
     <title>weather-app</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    <script src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
 </head>
 <body>
     
     <section class="main-content">
+        
+        <video class='background-video' muted loop autoplay plays-inline >
+            <source src='/visual media/london-city.mp4'>
+        </video>
+        
         <div class="left-info">
             <h1 class='location-left'>London</h1>
             <p class='location-extra'>England, United Kingdom</p>
 
             <div class="left-panel">
-                <h1>sun</h1>
-                <h1>hum</h1>
-                <h1>prep</h1>
-                <h1>ext</h1>
+                <canvas id="icon1" width="000" height="000"></canvas>
+                <canvas id="icon8" width="100px" height="100px"></canvas>
+                <h1 id='temp-display' class='temp-display'>temperature</h1>
+                <h1 id='humidity-display'>humidity</h1>
+                <h1 id='prec-display'>precipitation</h1>
             </div>
 
             <div class="middle-panels"> 
@@ -37,7 +44,6 @@
     </div>
 
     
-    <video class='background-video' src="/videos/london-city.mp4" muted loop autoplay ></video>
 
 </section>
 
