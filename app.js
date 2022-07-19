@@ -19,10 +19,10 @@ fetch(apiUrl)
     humidityDisplay.innerHTML = `Humidity: <br> ${humidity}%`;
     conditionDisplay.innerHTML = `Condition: <br> ${precipitation}`;
     
-    if (precipitation == 'clear sky') {
+//    if (precipitation == 'clear sky') {
         
     
-    }
+//    }
     
     console.log(precipitation);
     console.log(data);
