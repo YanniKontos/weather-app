@@ -43,9 +43,9 @@ fetch(apiUrl)
         
     };
 
+    changeIcon()
     // else if spaghetti code , much help appreciated !
 
-    changeIcon()
     
     console.log(data);
 
