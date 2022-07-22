@@ -20,8 +20,7 @@ fetch(apiUrl)
     conditionDisplay.innerHTML = `Condition: <br> ${precipitation}`;
     
     function changeIcon() {
-        if (precipitation === 'broken clouds' || precipitation === 'scattered clouds' ||
-            precipitation === 'few clouds') {
+        if (precipitation.includes('clouds')) {
             cloudIcon.src = '/visual media/cloud.png' 
         }
 
@@ -29,7 +28,7 @@ fetch(apiUrl)
             cloudIcon.src ='/visual media/sun.png' 
         }
 
-        else if (precipitation === 'shower rain' || precipitation === 'rain') {
+        else if (precipitation.includes('rain')) {
             cloudIcon.src ='/visual media/rain.png' 
         }
 
@@ -44,9 +43,9 @@ fetch(apiUrl)
     };
 
     changeIcon()
+
     // else if spaghetti code , much help appreciated !
 
-    
     console.log(data);
-
 });
+

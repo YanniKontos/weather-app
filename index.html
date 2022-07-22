@@ -9,10 +9,8 @@
     <script src="app.js"></script>
 </head>
 <body>
-    
-    <section class="main-content">
         
-        <video class='background-video' muted loop autoplay plays-inline >
+        <video id ='video-display' class='background-video' muted loop autoplay plays-inline>
             <source src='/visual media/london-city.mp4'>
         </video>
         
@@ -20,31 +18,41 @@
             <h1 class='location-left'>London</h1>
             <p class='location-extra'>England, United Kingdom</p>
 
-            <div class="left-panel">   
-                <img id ='icon8' src="/visual media/cloud.png">
-                
-                <h1 id='temp-display' class='temp-display'>temperature</h1>
-                <h1 id='humidity-display'>humidity</h1>
-                <h1 id='condition-display'>precipitation</h1>
-            </div>
+           <div class="menu-main-container">
 
-            <div class="middle-panels"> 
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-
+               <menu class="left-panel panel">   
+                   <img id ='icon8' src="/visual media/cloud.png">
+                   <h1 id='temp-display' class='temp-display'>temperature</h1>
+                   <h1 id='humidity-display'>humidity</h1>
+                   <h1 id='condition-display'>precipitation</h1>
+                </menu>
+                    
+                    <main class="middle-panels panel"> 
+                        <img id ='icon1' src="/visual media/sun.png">
+                        <h1>Temp 69°C</h1>
+                        <h1>condition</h1>
+                    </main>
+                    
+                    <main class="middle-panels-2 panel">
+                        <img id ='icon2' src="/visual media/thunder.png">
+                        <h1>Temp 69°C</h1>
+                        <h1>condition</h1>
+                    </main>
+                    
+                    <main class='middle-panels-3 panel'>
+                        <img id ='icon3' src="/visual media/snow.png">
+                        <h1>Temp 69°C</h1>
+                        <h1>condition</h1>
+                    </main>
+                    
+            </div>    
         </div>
-
+            
     <div class="right-info">
         <h1 class='date-right' id='date-right'> <span id='date-1'>Friday</span> 
         <span id='date-2'>15</span> <span id='date-3'>July</span></h1>
         <h1 class='short-date' id='short-date'>#</h1>
     </div>
-
-
-</section>
 
 <script>
     const dayDate = document.getElementById('date-1');
@@ -58,7 +66,7 @@
 
     let date = new Date();
 
-    let dayUTC = weekday[date.getUTCDay()]; //f
+    let dayUTC = weekday[date.getUTCDay()];
     let dateUTC = date.getUTCDate();
     let monthUTC = month[date.getUTCMonth()];
     let timeUTC = date.getUTCHours;

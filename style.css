@@ -8,34 +8,48 @@
 body {
     height: 100vh;
     width: 100%;
+    max-height: 100vh;
     overflow: hidden;
-}
-
-/* setting the page width and viewpiont height */
-
-.main-content {
     color: white;
 }
 
-/* contains and therefore affects all items on the main webpage */
+/* setting the page width and viewpiont height */
 
 .left-info {
     padding: 20px 0px 0px 60px;
     text-shadow: 0.1rem 0.1rem 3rem black;
 }
 
-
 .location-left {
     font-size: 40px;
 }
 
 .location-extra {
-    position: relative;
-    left: 10px;
+    margin-left: 10px;
     font-size: 20px;
 }
 
-.left-panel {
+.menu-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-main-container > main > img {
+    margin-left: 6em;
+}
+
+.menu-main-container > main > h1 {
+    margin-top: 20px;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+
+.panel {
+    margin-left: 13px;
+}
+
+.left-panel { 
     margin-top: 50px;
     padding: 15px 0px 0px 0px;
     width: 28rem;  
@@ -59,7 +73,39 @@ body {
 }
 
 .middle-panels {
-    
+    width: 20rem;
+    height: 20rem;
+    margin-top: 60px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 0px 32px 0 #00A676;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.middle-panels-2 {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 60px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 0px 32px 0 #731536;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.middle-panels-3 {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 60px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 0px 32px 0 #472392;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* right side of the webpage */
