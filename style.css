@@ -73,6 +73,7 @@ body {
 }
 
 .date-right {
+    width: 287px;
     font-size: 30px;
 }
 
@@ -85,8 +86,9 @@ body {
     font-size: 16px;
 }
 
-.weather-icons  {
-    display: none;
+.short-date {
+    position: relative;
+    right: 10px;
 }
 
 /* using flex and justify content to separate elements across the document 

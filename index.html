@@ -38,18 +38,39 @@
         </div>
 
     <div class="right-info">
-        <h1 class='date-right'>Friday 15th June</h1>
-        <p class="time-right">5:00:00 <span class='time-of-day'>PM</span></p>
+        <h1 class='date-right' id='date-right'> <span id='date-1'>Friday</span> 
+        <span id='date-2'>15</span> <span id='date-3'>July</span></h1>
+        <h1 class='short-date' id='short-date'>#</h1>
     </div>
 
-    <div class="weather-icons">
-        <div class='cloud-icon' id='cloudIcon'><img src="/visual media/cloud.png"></div>
-        <div class="sun-icon" id='sunIcon'><img src="/visual media/sun.png"></div>
-        <div class='moon-icon'><img src="/visual media/moon.png"></div>
-        <div class='rain-icon'><img src="/visual media/rain.png"></div>
-    </div>
 
 </section>
+
+<script>
+    const dayDate = document.getElementById('date-1');
+    const dateNum = document.getElementById('date-2');
+    const monthDate = document.getElementById('date-3');
+    const dayTime = document.getElementById('time-right');
+    const shortDate = document.getElementById('short-date');
+
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const month = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+    let date = new Date();
+
+    let dayUTC = weekday[date.getUTCDay()]; //f
+    let dateUTC = date.getUTCDate();
+    let monthUTC = month[date.getUTCMonth()];
+    let timeUTC = date.getUTCHours;
+
+    dayDate.textContent = dayUTC;
+    dateNum.textContent = dateUTC;
+    monthDate.textContent = monthUTC;
+
+    shortDate.textContent = date.toLocaleString('en-GB', {timeZone: 'Europe/London',});
+    // this controls the short date and time 
+
+</script>
 
 </body>
 </html>
